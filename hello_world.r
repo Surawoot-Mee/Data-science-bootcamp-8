@@ -5,4 +5,8 @@ print("hello world")
 print("ong")
 
 library(dpylr)
-mtcars
+mtcars %>%
+  select(1:5) %>%
+  filter(mpg >30)
+
+
